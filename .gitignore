@@ -1,5 +1,6 @@
 # --------------------- Java Gitignore (from https://github.com/github/gitignore) --------------------------------
-# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ----------------------------------
+# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ---------------------------------
+
 # Compiled class file
 *.class
 
@@ -24,7 +25,8 @@
 hs_err_pid*
 
 # ------------- C Gitignore (from https://github.com/github/gitignore) ----------------
-# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ----------------------------------
+# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ------
+
 # Prerequisites
 *.d
 
@@ -79,7 +81,8 @@ Mkfile.old
 dkms.conf
 
 # ---------------------- Python gitignore (from https://github.com/github/gitignore) -----------------------------
-# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ----------------------------------
+# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ---------------------------------
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -186,7 +189,8 @@ venv.bak/
 .mypy_cache/
 
 # ---------------------- Grails gitignore (from https://github.com/github/gitignore) -----------------------------
-# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ----------------------------------
+# ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ---------------------------------
+
 # .gitignore for Grails 1.2 and 1.3
 # Although this should work for most versions of grails, it is
 # suggested that you use the "grails integrate-with --git" command
@@ -221,8 +225,23 @@ venv.bak/
 # "temporary" build files
 /target
 
-# ----------------------  (from https://github.com/github/gitignore) -----------------------------
+# ---------------------- Go gitingore (from https://github.com/github/gitignore) -----------------------------
 # ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ----------------------------------
+
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
 
 # ----------------------  (from https://github.com/github/gitignore) -----------------------------
 # ---------------------- https://github.com/github/gitignore/blob/master/LICENSE ----------------------------------
