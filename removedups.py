@@ -1,3 +1,19 @@
+# works with Python 2.7 Anaconda
+#
+# Doesn't care about the file name - only if the content is identical
+# Leaves only one copy of the file
+# At present it starts from the parent directory and moves downwards
+# While it generates a shell script file with rm commands, it actually does the deletes in the course of the run
+# 
+
+# TODOs:
+# 1. GUI-based for better usability
+# 2. Dry run feature
+# 3. Temporary folder for work files
+# 4. Delete work files once done
+# 5. Document for Sphinx using restrucured text accoding to the instructins at: https://docs.python.org/devguide/documenting.html
+# 6. 
+
 import hashlib, csv, os
 
 def md5(fname):
