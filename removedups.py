@@ -29,6 +29,7 @@
 
 import hashlib, csv, os
 
+
 def md5(fname):
     hash_md5 = hashlib.md5()
     with open(fname, "rb") as f:
@@ -36,11 +37,13 @@ def md5(fname):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
 
+
 def process_directory_csv(current_dir_fullpath, sub_dir_list, files, csvwriter):
     for file in files:
         full_name = current_dir_fullpath + '/' + file
         # print("                         " + full_name)
         csvwriter.writerow([md5(full_name), str(os.path.getsize(full_name)), full_name])
+
 
 def walk_all_subdirectories(path, output_file_name):
     # count = 0
@@ -53,9 +56,10 @@ def walk_all_subdirectories(path, output_file_name):
             # DEBUG CODE - process only 5 directories
             # count += 1
             # if count >= 10:
-                # csvfile.close()
-                # break;
+            # csvfile.close()
+            # break;
         csvfile.close()
+
 
 def sort_file(inname, outname):
     input_file = open(inname, "r")
@@ -68,6 +72,7 @@ def sort_file(inname, outname):
         output_file.write(line)
     input_file.close()
     output_file.close()
+
 
 def generate_delete_commands(sortedfile, outname):
     import csv
@@ -85,6 +90,7 @@ def generate_delete_commands(sortedfile, outname):
         f.close()
     output_file.close()
 
+
 # Main program follows
 
 directory_name = ".."
@@ -96,4 +102,3 @@ if __name__ == '__main__':
     walk_all_subdirectories('..', unsorted_file_name)
     sort_file(unsorted_file_name, sorted_file_name)
     generate_delete_commands(sorted_file_name, delete_command_file_name)
-
