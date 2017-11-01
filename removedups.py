@@ -10,15 +10,17 @@
 # 
 
 # TODOs:
-# 1. GUIfication for better usability
-# 2. Dry-run feature
-# 3. Temporary folder for work files
-# 4. Delete work files once done
-# 5. Document for Sphinx using restrucured text accoding to the instructins at: https://docs.python.org/devguide/documenting.html
-# 6. Checks for file types and permissions / error recovery and reporting
-# 7. Statistics - files space recovered / saved, total files, deleted files, total directories, max / min ...
-# 8. Should work on Python 2 as well as 3
-# 9. Parametrization of top-level directory
+#  1. GUIfication for better usability
+#  2. Dry-run feature
+#  3. Temporary folder for work files
+#  4. Clean up once done, e.g. delete work files
+#  5. Document for Sphinx using restrucured text accoding to the instructins at: https://docs.python.org/devguide/documenting.html
+#  6. Checks for file types and permissions / error recovery and reporting
+#  7. Statistics - files space recovered / saved, total files, deleted files, total directories, max / min ...
+#  8. Should work on Python 2 as well as 3
+#  9. Parametrization of top-level directory
+# 10. Logging
+# 11. Results print out
 
 import hashlib, csv, os
 
