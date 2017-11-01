@@ -3,16 +3,22 @@
 # Doesn't care about the file name - only if the content is identical
 # Leaves only one copy of the file
 # At present it starts from the parent directory and moves downwards
-# While it generates a shell script file with rm commands, it actually does the deletes in the course of the run
+# Covers all subdirectories
+#
+# It generates a shell script file with rm commands, 
+# BUT actually does the deletes in the course of the run
 # 
 
 # TODOs:
-# 1. GUI-based for better usability
-# 2. Dry run feature
+# 1. GUIfication for better usability
+# 2. Dry-run feature
 # 3. Temporary folder for work files
 # 4. Delete work files once done
 # 5. Document for Sphinx using restrucured text accoding to the instructins at: https://docs.python.org/devguide/documenting.html
-# 6. 
+# 6. Checks for file types and permissions / error recovery and reporting
+# 7. Statistics - files space recovered / saved, total files, deleted files, total directories, max / min ...
+# 8. Should work on Python 2 as well as 3
+# 9. Parametrization of top-level directory
 
 import hashlib, csv, os
 
