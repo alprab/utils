@@ -1,4 +1,8 @@
-# works with Python 2.7 Anaconda
+# Works with Python 2.7 Anaconda
+#
+# -----------------------------------------
+# STILL EXPERIMENTING! DO NOT USE THIS YET!
+# -----------------------------------------
 #
 # Doesn't care about the file name - only if the content is identical
 # Leaves only one copy of the file
@@ -7,8 +11,7 @@
 #
 # It generates a shell script file with rm commands, 
 # BUT actually does the deletes in the course of the run
-# 
-
+#
 # TODOs:
 #  1. GUIfication for better usability
 #  2. Dry-run feature
@@ -21,6 +24,7 @@
 #  9. Parametrization of top-level directory
 # 10. Logging
 # 11. Results print out
+#
 
 import hashlib, csv, os
 
